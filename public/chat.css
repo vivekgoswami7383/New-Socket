@@ -1,0 +1,67 @@
+body {
+          margin: 0%;
+          padding: 0%;
+          font-family: 'Prompt', sans-serif;
+}
+
+h1 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 25px;
+          color: slateblue;
+}
+
+.container {
+          height: 65vh;
+          width: 25%;
+          justify-content: center;
+          text-align: center;
+          border: 1px solid black;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+}
+
+.message {
+          max-width: 50%;
+          width: max-content;
+          margin-right: auto;
+          margin-left: 0;
+          border-radius: 2.5px;
+          padding: 6px 12px;
+          border: 1px solid gray;
+          margin-bottom: 5px;
+}
+
+.message:last-child {
+          margin-bottom: 0;
+}
+
+.message--owner {
+          margin-right: 0;
+          margin-left: auto;
+}
+
+.messages_container {
+          overflow-y: scroll;
+          overflow-x: hidden;
+          height: 100%;
+          overflow-y:scroll ;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 12px 10px;
+}
+
+.message__send {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          padding: 0 1rem;
+          gap: 1rem;
+}
+
+.message__send input {
+          flex: 1;
+          height: 20px;
+}
